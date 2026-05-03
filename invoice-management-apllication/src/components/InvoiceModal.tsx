@@ -1,6 +1,5 @@
 import { IoMdTrash } from "react-icons/io";
 import { AiOutlinePlus } from "react-icons/ai";
-import Back from "./Back";
 import MobileButtonCont from "./MobileButtonCont";
 import useStatic from "../hooks/useStatic";
 import useInvoiceForm from "../hooks/useForm";
