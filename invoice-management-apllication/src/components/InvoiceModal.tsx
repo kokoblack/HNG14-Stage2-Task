@@ -22,10 +22,6 @@ const InvoiceModal = ({ id, status }: InvoiceModalProps) => {
 
   return (
     <div className=" [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] box-border scroll-smooth overflow-y-scroll bg-1300 dark:bg-1200 w-170 max-[764px]:w-150 max-[640px]:w-full h-screen max-[640px]:px-6 max-[640px]:rounded-none max-[640px]:pt-10 px-12 pt-16 pb-30 rounded-tr-4xl rounded-br-4xl text-100 [&_h2]:text-[15px] [&_h2]:mb-6 [&_h2]:font-medium">
-      <div className="max-[640px]:block hidden">
-        <Back />
-      </div>
-
       <form onSubmit={handleSubmit(onValid)} noValidate>
         <fieldset>
           <>

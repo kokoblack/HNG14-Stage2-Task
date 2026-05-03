@@ -22,7 +22,7 @@ const Home = () => {
   usePop();
 
   return (
-    <div className=" max-[1024px]:pb-25 w-full h-screen max-[764px]:px-12 max-[640px]:px-6 min-h-screen bg-1100 dark:bg-1200">
+    <div className=" max-[1024px]:pb-25 max-[640px]:pb-70 max-[376px]:pb-120 w-full h-screen max-[764px]:px-12 max-[640px]:px-6 min-h-screen bg-1100 dark:bg-1200">
       <section className="w-185 max-[1024px]:w-150 max-[764px]:w-full max-[480px]:pt-10 pt-20 mx-auto mb-16 flex justify-center items-center max-[480px]">
         <section className="mr-auto">
           <h3 className=" text-800 dark:text-1300 font-bold text-[36px] max-[480px]:text-[26px] max-[480px]:leading-6">

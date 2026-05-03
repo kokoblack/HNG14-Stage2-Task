@@ -26,7 +26,7 @@ const DetailPage = () => {
   usePop()
 
   return (
-    <div className=" max-[1024px]:pb-25 w-full box-border min-h-screen bg-1100 dark:bg-1200">
+    <div className=" max-[1024px]:pb-25 max-[640px]:pb-70 max-[376px]:pb-120 w-full box-border min-h-screen bg-1100 dark:bg-1200">
       <div className=" relative flex justify-start items-center flex-col h-screen pt-12 max-[764px]:px-10 max-[480px]:px-6">
         <section className=" w-185 max-[1024px]:w-160 max-[764px]:w-full">
           <Back />
