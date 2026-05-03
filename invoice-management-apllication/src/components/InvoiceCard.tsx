@@ -1,7 +1,7 @@
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { useDetailStore } from "../redux/DetailReduce";
 import { useNavigate } from "react-router";
-import { calculateDueDate, formatDate, formatDecimal } from "../utils/formatDate";
+import { calculateDueDate, formatDecimal } from "../utils/formatDate";
 
 type InvoiceCardProps = {
   id: string;
