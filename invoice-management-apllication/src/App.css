@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-league: "League Spartan", "sans-serif";
+
+  --shadow-edit: 0 -40px 50px -10px rgba(0, 0, 0, 0.25);
+
+  --color-100: #7C5DFA;
+  --color-200: #9277FF;
+  --color-300: #1E2139;
+  --color-400: #252945;
+  --color-500: #DFE3FA;
+  --color-600: #888EB0;
+  --color-700: #7E88C3;
+  --color-800: #0C0E16;
+  --color-900: #EC5757;
+  --color-1000: #9277FF;
+  --color-1100: #F8F8FB;
+  --color-1200: #141625;
+  --color-1300: #FFFFFF;
+  --color-1400: #F9FAFE;
+}
