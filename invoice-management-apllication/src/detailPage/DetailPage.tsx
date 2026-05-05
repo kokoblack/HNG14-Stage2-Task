@@ -23,16 +23,16 @@ const DetailPage = () => {
 
   const { toggleDeleteModal, toggleInvoiceModal } = useClickActionStore();
 
-  usePop()
+  usePop();
 
   return (
-    <div className=" max-[1024px]:pb-25 max-[640px]:pb-70 max-[376px]:pb-120 w-full box-border min-h-screen bg-1100 dark:bg-1200">
-      <div className=" relative flex justify-start items-center flex-col h-screen pt-12 max-[764px]:px-10 max-[480px]:px-6">
-        <section className=" w-185 max-[1024px]:w-160 max-[764px]:w-full">
+    <div className=" w-full box-border max-[640px]:pb-30 relative pb-20 min-[1024px]:pl-25 bg-1100 dark:bg-1200">
+      <div className="w-185 max-[1024px]:w-160 max-[764px]:w-full mx-auto pt-12 max-[764px]:px-10 max-[480px]:px-6">
+        <section>
           <Back />
         </section>
 
-        <section className="py-6 w-185 max-[1024px]:w-160 max-[764px]:w-full flex justify-center items-center px-8 max-[480px]:px-6 bg-1300 dark:bg-300 rounded-lg">
+        <section className="py-6 flex justify-center items-center px-8 max-[480px]:px-6 bg-1300 dark:bg-300 rounded-lg">
           <section className=" flex justify-center items-center gap-6 mr-auto max-[640px]:m-0 max-[640px]:w-full">
             <p className=" text-[13px] max-[480px]:text-[12px] text-[#858BB2] dark:text-500 font-medium max-[640px]:mr-auto">
               Status
@@ -49,7 +49,7 @@ const DetailPage = () => {
           </section>
         </section>
 
-        <section className=" w-185 max-[1024px]:w-160 max-[764px]:w-full max-[480px]:px-6 max-[480px]:py-6 px-12 py-10 mt-10 bg-1300 dark:bg-300 rounded-lg max-[480px]:[&_strong,time]:text-[14px] max-[480px]:[&_p]:text-[12px] [&_strong,time]:text-[15px], [&_strong,time]:text-800 dark:[&_strong,time]:text-1300 [&_strong,time]:font-bold [&_p]:text-[13px] [&_p]:text-700 dark:[&_p]:text-500  [&_p]:font-medium">
+        <section className=" max-[480px]:px-6 max-[480px]:py-6 px-12 py-10 mt-10 bg-1300 dark:bg-300 rounded-lg max-[480px]:[&_strong,time]:text-[14px] max-[480px]:[&_p]:text-[12px] [&_strong,time]:text-[15px], [&_strong,time]:text-800 dark:[&_strong,time]:text-1300 [&_strong,time]:font-bold [&_p]:text-[13px] [&_p]:text-700 dark:[&_p]:text-500  [&_p]:font-medium">
           <section className="flex items-start justify-between mb-4 max-[480px]:flex-col max-[480px]:gap-y-6">
             <section>
               <strong>
@@ -155,6 +155,8 @@ const DetailPage = () => {
           </section>
         </section>
 
+        {/* <div className="w-full h-50 bg-red-600"></div> */}
+
         <section className="min-[640px]:hidden fixed w-full bottom-0 left-0 max-[764px]:w-150 max-[640px]:w-full max-[640px]:rounded-none shadow-edit max-[640px]:px-10 max-[480px]:px-6 max-[640px]:py-4 max-[480px]:gap-1 px-10 py-6 gap-4 bg-1300 dark:bg-1200 rounded-br-4xl flex justify-center items-center">
           <DetailButton status={invoiceData?.status} id={invoiceData?.id} />
         </section>
@@ -179,7 +181,6 @@ const DetailPage = () => {
 };
 
 export default DetailPage;
-
 
 const DetailButton = ({ status, id }: DetailButtonProps) => {
   const set = useClickActionStore((state) => state.set);

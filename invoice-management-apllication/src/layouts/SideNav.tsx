@@ -7,7 +7,7 @@ import { useClickActionStore } from "../redux/ClickActionRedux";
 const SideNav = () => {
   const { set, toggleTheme } = useClickActionStore();
   return (
-    <section className="bg-300 z-10 justify-center items-center float-left left-0 min-[1024px]:min-h-screen fixed w-25 rounded-tr-[20px] rounded-br-[20px] max-[1024px]:rounded-none max-[1024px]:h-fit max-[1024px]:float-none max-[1024px]:w-full max-[1024px]:flex max-[1024px]:sticky max-[1024px]:top-0">
+    <section className="bg-300 z-10 justify-center items-center float-left min-[1024px]:min-h-screen  w-25 fixed rounded-tr-[20px] rounded-br-[20px] max-[1024px]:rounded-none max-[1024px]:h-fit max-[1024px]:float-none max-[1024px]:w-full max-[1024px]:flex max-[1024px]:sticky max-[1024px]:top-0">
       <figure className=" mr-auto rounded-tr-lg rounded-br-lg w-25 max-[480px]:w-20 mb-auto">
         <img src={logo} alt="logo" />
       </figure>

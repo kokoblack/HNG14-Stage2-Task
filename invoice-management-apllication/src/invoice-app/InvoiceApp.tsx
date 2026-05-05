@@ -16,10 +16,9 @@ const InvoiceApp = () => {
   return (
     <BrowserRouter>
       <main
-        className={`${theme ? "dark" : ""} max-[1024px]:block max-[1024px]:mb-0 mb-30 bg-1100 dark:bg-1200 box-border relative max-h-screen flex justify-center items-center`}
+        className={`${theme ? "dark" : ""} max-[1024px]:block bg-1100 dark:bg-1200 box-border relative`}
       >
         <SideNav />
-        <div className="w-25 max-[1024px]:hidden"></div>
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
